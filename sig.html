@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sin.css">
+</head>
+<body>
+  <div style="height: 100px;" > <img src="logo.png" style="height: 100px; border-radius: 10px;" ></div>
+  <img src="sr.png" style="width: 100%; position: absolute; z-index: -1; height: 700px; opacity: 1; ">
+  <form action="regis.php" method="post" style="border:1px solid #ccc; background-color: rgb(0, 195, 255);opacity: 0.7;">
+    <div class="container">
+      <h1> Sign Up as a new user</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+
+      <label for="Name"><b>Name</b></label>
+      <input type="text" placeholder="Enter Name" name="Name" required>
+
+      <label for="DOB"><b>D.O.B</b></label>
+      <input type="text" placeholder="Enter DOB" name="DOB" required>
+  
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+  
+      <label for="Username"><b>Username</b></label>
+      <input type="text" placeholder="Create Username" name="USERNAME" required>
+  
+      <label for="psw"><b> Password</b></label>
+      <input type="password" placeholder="Password" name="psw" required>
+
+      <label for="psw"><b> Number</b></label>
+      <input type="text" placeholder="Number" name="Number" required>
+  
+  
+      
+      <div class="clearfix">
+        <button type="button" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+  <!--INSERT INTO `students` (`s.no`, `Name`, `D.O.B`, `Email`, `Username`, `Password`, `Mobile number`, `dt`) VALUES ('1', 'testname', '10/10/2004', 'this@this.com', 'hello', '12345678', '999999999', current_timestamp());
+  -->
+  </body>
+</html>

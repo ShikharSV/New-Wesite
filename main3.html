@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+</style>
+
+<script src="https://kit.fontawesome.com/bba3432f3f.js"
+               crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styless.css">
+<script src="sam.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body background="back.jpeg" >
+  
+  <div style="background-color: white; display: flex ;height: 130px; flex-wrap: wrap;">
+  <div style="height: 130px; " > <img src="logo.png" style="height: 120px; border-radius: 10px;" ></div>
+ <div style="margin-left: 700px; margin-top: 10px; font-weight: bolder;"> Enroll and Have some special offers<br><br><a href="tel:+91-8319876097" style="color: black;"><i class="fa-solid fa-phone"></i>+91-8319876097</a><br><br><a href="mailto:samashtitutors@gmail.com" style="color: black;"><i class="fa-sharp fa-solid fa-message-lines"></i>samashtitutors@gmail.com</a></div> 
+</div>
+  
+  
+  <nav>
+    <a href="#" style="border-right: 2px solid white;"> <i class="fa-solid fa-house"></i>Home </a>
+    <a href="#" style="border-right: 2px solid white;">Service </a>
+    <a href="#" style="border-right: 2px solid white;"><i class="fa-solid fa-phone"></i>Contact us</a>
+    <a href="review.htmluyjhmn" style="border-right: 2px solid white;">Reviews </a>
+   <a href="about.html" style="border-right: 2px solid white;"><i class="fa-solid fa-user" ></i>About Us </a>
+</nav>
+      
+
+  
+
+
+<div style="width: 100%; border: 5px solid white;">
+
+<div class="slideshow-container" >
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img1.png" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img2.png" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img3.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+
+<div class="shop-section" style="display: flex; flex-wrap: wrap;">
+  
+  <div class="box1 box">
+    <h1 style="text-align: center;">Best Environment</h1>
+      <div class="box-content">
+      <div class="box-img" style="background-image: url('environment.jpeg');"></div>
+      <p></p>
+  </div>
+  </div>
+  <div class="box2 box">
+    <h1 style="text-align: center;">Best Faculty</h1>
+      <div class="box-content">
+          <div class="box-img" style="background-image: url('faculty.jpeg');"></div>
+          <p></p>
+      </div>
+  </div>
+  <div class="box3 box">
+    <h1 style="text-align: center;">Best Mentor</h1>
+      <div class="box-content">
+          <div class="box-img" style="background-image: url('mentor.jpeg');"></div>
+        <p></p>
+      </div>
+  </div>
+  
+  </div>
+
+
+<div style="background-color: white; padding-bottom: 50px; margin-bottom: 0px;" >
+
+<div style="margin-top: 0px;  background-color: whitesmoke; border: 10px soid wheat; display: flex; flex-wrap: wrap; justify-content: space-evenly; margin-bottom: 0px;background-repeat: no-repeat; background-size: cover;" ><br><br>
+ <h1 style="text-align: center; opacity: 1; width: 1200px;margin-top: 20px;" > Hii, Where Are You Going ? Just Explore</h1>
+<div style="height: 350px; width: 500px; margin: 20px; background-color: #f2f2f2; border-radius: 7px;background-image: url(backg.jpeg); text-align: center; background-repeat: no-repeat; background-size: cover; font-size: 20px;padding: 10px; border: 2px solid black;" ><h1>For Nineth Class</h1>
+
+<li>Singing Teacher <img src=""></li>
+<li>Dance Teacher</li>
+<li>Yoga Teacher</li>
+<li>Sports Teacher</li>
+<li>Subject Teacher</li>
+<li> Mentor</li>
+<li>Health </li>
+</ul>      
+<a href="http://localhost/form/signup.php" style="text-decoration: none; color: rgb(0, 89, 255);">View More</a>     
+</div>
+<div style="height: 350px; width: 500px; margin: 20px;  background-color: #f2f2f2; border-radius: 7px; background-image: url(backg.jpeg); text-align: center; background-repeat: no-repeat; background-size: cover; font-size: 20px;padding: 10px; border: 2px solid black;"  ><img src=""><h1>For Tenth Class</h1>
+  
+    <li>Maths Teacher </li>
+    <li>Hindi Teacher</li>
+    <li>Science Teacher</li>
+    <ll>English Teacher</ll>
+    <li>Singing Teacher</li>
+    <li>Dance Teacher</li>
+    <li>Yoga Teacher</li>
+    <li>Sports Teacher</li>
+    <li> Mentor</li>
+    <li>Health </li>
+    </ul>           
+    <a href="http://localhost/form/signup.php" style="text-decoration: none;color: rgb(0, 89, 255)">View More</a> 
+</div>
+<div style="height: 350px; width: 500px; margin: 20px;  background-color: #f2f2f2; border-radius: 7px; background-image: url(backg.jpeg); text-align: center;  background-repeat: no-repeat; background-size: cover; font-size: 20px;padding: 10px; border: 2px solid black;"><img src=""><h1>For Eleventh Class</h1>
+  
+  <li>Maths Teacher</li>
+  <li>Chemistry Teacher</li>
+  <li>Physics Teacher</li>
+  <ll>English Teacher</ll>
+  <li>Singing Teacher</li>
+  <li>Dance Teacher</li>
+  <li>Yoga Teacher</li>
+  <li>Sports Teacher</li>
+  <li> Mentor</li>
+  <li>Health </li>
+  </ul>   
+  <a href="http://localhost/form/signup.php" style="text-decoration: none; color: rgb(0, 89, 255)">View More</a>         
+</div>
+<div style="height: 350px; width: 500px; margin-top: 20px;  background-color: #f2f2f2; border-radius: 7px; background-image: url(backg.jpeg); text-align: center;  background-repeat: no-repeat; background-size: cover; font-size: 20px;padding: 10px; border: 2px solid black;"><img src=""><h1>For 12th Class</h1>
+  <li>Maths Teacher</li>
+  <li>Chemistry Teacher</li>
+  <li>Physics Teacher</li>
+  <ll>English Teacher</ll>
+  <li>Singing Teacher</li>
+  <li>Dance Teacher</li>
+  <li>Yoga Teacher</li>
+  <li>Sports Teacher</li>
+  <li> Mentor</li>
+  <li>Health </li>
+  </ul>          
+  <a href="http://localhost/form/signup.php" style="text-decoration: none; color: rgb(0, 89, 255)">View More</a>  
+</div>
+<br><br>
+</div>
+</div>
+
+  
+
+  <div class="container" style="padding: 20px;background-image: url(backg.jpeg); background-repeat: no-repeat; background-size: cover; ">
+    <h1 style="margin: 20px; text-align: center; width: 1200px; font-size: 50PX;">How We Work?</h1>
+   <h3 style="margin: 20px; text-align: center; width: 1200px; font-size: 30PX;">FOR STUDDENT</h3>
+    <div class="work" style="background-color: rgb(0, 204, 255);">
+      <div style="width: 350px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;"><h1 style="color: rgb(0, 0, 255);">Post Free<br>Enquirey</h1>
+      <img src="enquire.jpeg" height="160px" width="160px">
+      <h3 >Post an enquirey about what you want <br>and get the best Home Tutors </h3></div>
+    </div>
+    <div class="work" style="background-color: rgb(0, 204, 255);">
+      <div style="width: 350px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1 style="color: rgb(0, 0, 255);">Instant Response</h1>
+      <img src="respone.jpeg" height="165px" width="190px">
+      <h3 > As your enquirey and needs , get<br> the instant Response from our best<br> tutors and start learning</h3></div>
+    </div>
+    <div class="work" style="background-color: rgb(0, 204, 255);">
+    <div style="width: 350px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1 style="color: rgb(0, 0, 255);">Learn And Take Demo</h1>
+      <img src="demo.jpeg" height="160px" width="160px">
+      <h3> Take a Free demo class from your <br>Home tutors.<br>And hire them to learn</h3></div>
+    </div>
+    
+    <div class="work" style="background-color: rgb(0, 204, 255);">
+      <div style="width: 350px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1 style="color: rgb(0, 0, 255);">Skill Development</h1>
+      <img src="skill.jpeg" height="160px" width="160px">
+      <h3 >As well As With study <br>also prefect yourself in other<br> skills with our teachers</h3></div>
+    </div>
+
+    <h3 style="margin: 20px; width: 1200px ; text-align: center; font-size: 30PX;">FOR Tutors</h3>
+    <div class="work" style="background-color: orange;width: 700px;">
+      <div style="width: 500px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1>Register Yourself</h1>
+      <img src="register.jpeg" style="height: 160px; width: 160px;">
+      
+      <h3>Create your Profile for free and register yourself and be the part<br> of samashti family .Start your great journey with us and for students future. </h3></div>
+    </div>
+    <div class="work"  style="background-color: orange; width: 700px;">
+      <div style="width: 500px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1>Teach at Hone and </h1>
+      <img src="home.jpeg" style="height: 160px; width: 160px;">
+      <h3>Teach the students at their home and online and help the <br>students to bulid their better future and being the part of success journey of students.</h3></div>
+    </div>
+    <div class="work"  style="background-color: orange; width: 700px;">
+      <div style="width: 500px;background-color: white; border-bottom-right-radius: 50px ; margin: 20px;">
+      <h1>Get Teeaching Certificate </h1>
+      <img src="certificate.jpeg" style="height: 160px; width: 160px;">
+      <h3>Get a teaching Certificate from Samashti Tutors to rise yourself as a teacher <br>and have some other facilities form Samashti Tutors. </h3></div>
+    </div>
+    <br>
+  </div>
+
+
+<div>
+  <h2></h2>
+</div>
+<div style="padding: 20px;background-color: white;"><img src="last1.png" style="height: 500px; width: 100%; padding-top: 50px; background-color: white;"></div>
+<div style="padding: 20px; background-color: white;"><img src="last2.png" style="height: 500px; width: 100%;"></div>
+<div style="padding: 20px; background-color: white;"><img src="last3.png" style="height: 500px; width: 100%;"></div>
+<div style="display: flex; justify-content: space-evenly; background-color: white;">
+  <DIV><a href="https://wa.me/918319876097" target="_blank"><img style= "display: flex; height: 80px; width: 80px;" src="whatsapp.jpeg"></DIV></a>
+  <div><a href="https://www.instagram.com/sam_ashti/?hl=en"><img style="height: 80px; width: 80px;" src="insta.jpeg"></div></a>
+  </div>
+  <DIV style="position: fixed; bottom: 40px; right: 20px; "><a href="https://wa.me/918319876097" target="_blank"><img style= "display: flex; height: 50px; width: 50px;" src="whatsapp.jpeg"></a></DIV>
+
+<div style="background-color: rgb(0, 60, 255); color: white; display: flex;flex-wrap: wrap; justify-content: space-evenly;">
+  <div>
+    <h2>COMPANY</h2>
+    <h2>Education Hub</h2>
+   <a href="about.html"> About us</a><br>
+   <a href="#"> Terms & Conditions</a><br>
+   <a href="#">Contact us</a>
+
+  </div>
+  <div> </div>
+  <div><h2>Contact </h2>
+       Address: Jaipur<br>
+       Phone:8319876097<br>
+       Email:Samashtitutors@gmail.com<br>
+         </div>
+  </div>
+</div>
+
+
+
+</body>
+</html> 
